@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Cynic</title>
+  <title>Electrothon</title>
+  <link href='https://css.gg/shopping-bag.css' rel='stylesheet'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
 </head>
-<body id="home">
-  <!-- Navbar -->
-  <nav id="navbar">
-    <h1 class="logo">
-      Cynic
-    </h1>
-    <form onsubmit="event.preventDefault();" role="search">
-      <label for="search">Search for stuff</label>
-      <input id="search" type="search" placeholder="Search..." autofocus required />
-      <button type="submit">Go</button>    
-    </form>
-    
-    <ul>
-      <li><a href="#"><i class="fas fa-compass fa-3x"></i></a></li>
-      <li><a href="#"><i class="far fa-user fa-3x"></i></a></li>
-      <li><a href="#"><i class="far fa-heart fa-3x"></i></a></li>
-      <li><a href="#"><i class="fas fa-shopping-cart fa-3x"></i></a></li>
-    </ul>
-  </nav>
+<body>
+<!-- partial:index.partial.html -->
+<input type="checkbox" id="check">
+<nav>
+  <label  class="logo">Cynic</label>
+  <div class="search_box">
+    <input type="search" placeholder="Search here">
+    <span class="fa fa-search"></span>
+  </div>
+  <ul>
+    <li><a href="#"><i class="fas fa-compass fa-2x"></i></a></li>
+    <li><a href="#"><i class="far fa-user fa-2x"></i></a></li>
+    <li><a href="#"><i class="far fa-heart fa-2x"></i></a></li>
+    <li><a href="#"><i class="gg-shopping-bag"></i></a></li>
+  </ul>
+  <label for="check" class="checkbtn">
+    <span class="fa fa-bars" id="bars"></span>
+    <span class="fa fa-times" id="times"></span>
+  </label>
+</nav>
+<!-- partial -->
   
 </body>
 </html>

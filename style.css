@@ -1,255 +1,172 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.4;
-}
-
-a {
   text-decoration: none;
-}
-
-p {
-  margin: 0.75rem 0;
-}
-
-/* Utility Classes */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 2rem;
-  overflow: hidden;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-primary {
-  color: #93cb52;
-}
-
-.bg-light {
-  background: #f4f4f4;
-  color: #333;
-}
-
-.bg-dark {
-  background: #333;
-  color: #fff;
-}
-
-.bg-primary {
-  background: #93cb52;
-  color: #fff;
-}
-
-.l-heading {
-  font-size: 4rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.1;
-}
-
-.m-heading {
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.1;
-}
-
-.lead {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
-
-.py-1 {
-  padding: 1.5rem 0;
-}
-.py-2 {
-  padding: 2rem 0;
-}
-.py-3 {
-  padding: 3rem 0;
-}
-
-.p-1 {
-  padding: 1.5rem;
-}
-.p-2 {
-  padding: 2rem;
-}
-.p-3 {
-  padding: 3rem;
-}
-
-.btn {
-  display: inline-block;
-  color: #fff;
-  background: #93cb52;
-  padding: 0.5rem 2rem;
-  border: none;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background: #7ab436;
-}
-
-.btn-dark {
-  background: #333;
-  color: #fff;
-}
-
-.list {
-  margin: 0.5rem 0;
   list-style: none;
+  box-sizing: border-box;
+  /*   border: 1px solid; */
+  font-family: sans-serif;
+  color: #3c3c3c;
 }
-
-.list li {
-  padding: 0.5rem 0;
-  border-bottom: #444 dotted 1px;
+html {
+  background: #ebe7e3;
 }
-
-/* Navbar */
-h1.logo{
-  font-size: 3rem;
-}
-#navbar {
+nav {
   display: flex;
   position: sticky;
-  top: 0;
-  background: #C9B594;
-  color: #333;
   justify-content: space-between;
-  z-index: 1;
-  padding: 2rem;
+  padding: 8px 30px;
+  background: #deb992;
+  position: relative;
+  /* padding-top: 100px; */
 }
-
-#navbar ul {
+nav .logo {
+  font-size: 36px;
+  font-weight: 800;
+  margin: auto 0;
+}
+nav ul {
+  padding: 12px 0px 0px 0px;
   display: flex;
-  align-items: center;
-  list-style: none;
+  justify-content: space-between;
+  margin: auto 0;
 }
-
-#navbar ul li a {
-  color: #333;
-  padding: 0.75rem;
-  margin: 0 0.25rem;
+nav ul li {
+  margin: 0 5px;
 }
-
-#navbar ul li a:hover {
-  background: #93cb52;
+nav ul li a {
+  /* font-size: 20px; */
+  /* letter-spacing: 1px; */
+  padding: 5px 8px;
   border-radius: 5px;
+  text-align: center;
+  /* text-transform: capitalize; */
+  color: #000;
+}
+nav ul li:hover a {
+  background: #657e68;
+  /* width: 100px; */
+  color: #fff;
 }
 
-/* Searchbar */
-
-:root {
-  --rad: .7rem;
-  --dur: .3s;
-  --color-dark: #2f2f2f;
-  --color-light: #fff;
-  --color-brand: #57bd84;
-  --font-fam: "Lato", sans-serif;
-  --height: 2rem;
-  --btn-width: 6rem;
-  --bez: cubic-bezier(0, 0, 0.43, 1.49);
-}
-
-/* body {
-  background: var(--color-dark);
+nav .search_box {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-} */
-
-html {
-  box-sizing: border-box;
-  height: 100%;
-  font-size: 10px;
+  margin: auto 0;
+  height: 40px;
+  line-height: 35px;
 }
-
-*, *::before, *::after {
-  box-sizing: inherit;
+nav .search_box input {
+  width: 750px;
+  padding: 0 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
 }
-
-form {
+nav .search_box span {
+  font-size: 20px;
+  color: #f4bb42;
+  background: #fff;
+  line-height: 35px;
+  padding: 0 8px;
   position: relative;
-  width: 20rem;
-  background: var(--color-brand);
-  border-radius: var(--rad);
-}
-
-input, button {
-  height: var(--height);
-  font-family: var(--font-fam);
-  border: 0;
-  color: var(--color-dark);
-  font-size: 1.8rem;
-}
-
-input[type=search] {
-  outline: 0;
-  width: 100%;
-  background: var(--color-light);
-  padding: 0 1.6rem;
-  border-radius: var(--rad);
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  transition: all var(--dur) var(--bez);
-  transition-property: width, border-radius;
+  cursor: pointer;
   z-index: 1;
-  position: relative;
 }
-
-button {
-  display: none;
+nav .search_box span:hover {
+  color: #fff;
+}
+nav .search_box span::after {
+  height: 100%;
+  width: 0%;
+  content: "";
+  background: #657e68;
   position: absolute;
   top: 0;
   right: 0;
-  width: var(--btn-width);
-  font-weight: bold;
-  background: var(--color-brand);
-  border-radius: 0 var(--rad) var(--rad) 0;
+  z-index: -1;
+  transition: 0.3s;
+}
+nav .search_box span:hover::after {
+  width: 100%;
 }
 
-input:not(:-moz-placeholder-shown) {
-  border-radius: var(--rad) 0 0 var(--rad);
-  width: calc(100% - var(--btn-width));
+nav .checkbtn {
+  position: relative;
+  margin: auto;
+  display: none;
 }
 
-input:not(:-ms-input-placeholder) {
-  border-radius: var(--rad) 0 0 var(--rad);
-  width: calc(100% - var(--btn-width));
-}
-
-input:not(:placeholder-shown) {
-  border-radius: var(--rad) 0 0 var(--rad);
-  width: calc(100% - var(--btn-width));
-}
-input:not(:-moz-placeholder-shown) + button {
-  display: block;
-}
-input:not(:-ms-input-placeholder) + button {
-  display: block;
-}
-input:not(:placeholder-shown) + button {
-  display: block;
-}
-
-label {
+nav .checkbtn span {
   position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
+  font-size: 25px;
+}
+#check {
+  display: none;
+}
+
+.gg-shopping-bag {
+  /* display: flex; */
+  /* This value will multiple the actual size  */
+  /* --ggs: 1.5; */
+  transform: translateY(-12px) scale(1.5) translateX(8px);
+  /* align-items: flex- ; */
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+  nav .logo {
+    display: inline-block;
+  }
+
+  nav .search_box {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  nav .search_box input {
+    width: 90%;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    height: 0;
+    visibility: hidden;
+  }
+  nav ul li {
+    opacity: 1;
+    /* padding-top: 5000px; */
+  }
+  nav ul li a {
+    color: #000;
+    font-size: 28px;
+    padding: 25px;
+    display: block;
+  }
+
+  nav .checkbtn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    cursor: pointer;
+  }
+  nav .checkbtn #times {
+    display: none;
+  }
+  #check:checked ~ nav .checkbtn #bars {
+    display: none;
+  }
+  #check:checked ~ nav .checkbtn #times {
+    display: block;
+  }
+  #check:checked ~ nav ul {
+    visibility: visible;
+    height: 465px;
+  }
 }
